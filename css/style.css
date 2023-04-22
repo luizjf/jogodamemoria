@@ -1,0 +1,111 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    font-family: 'Righteous', sans-serif, system-ui, -apple-system, sans-serif;
+    background: url(/img/aldeia\ da\ folha.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 2px 7px black;
+}
+
+.card{
+    width: 120px;
+    height: 170px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .6s;
+    cursor: pointer;
+}
+
+.card_front, .card_back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    box-shadow: 5px 5px 20px 2px black;
+    margin-bottom: 10px;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+.card_front{
+    transform: rotateY(180deg);
+    background-color: #101c2c;
+}
+
+.card_back{
+    color: #ffffff;
+    background-color: #c01414;
+    font-size: 30px;
+}
+
+.card_front img{
+    width: 120px;
+    height: 170px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card_back img{
+    width: 100px;
+}
+
+#gameOver{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: white;
+    font-size: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    padding: 345px;
+    text-align: center;
+}
+
+#restart{
+    padding: 15px;
+    background-color: rgb(216, 216, 19);
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0 solid;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+#restart:hover{
+    transform: scale(1.1);
+}
+
+#gameBoard{
+    max-width: 900px;
+    max-height: 600px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}

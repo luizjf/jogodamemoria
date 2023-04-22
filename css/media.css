@@ -1,0 +1,119 @@
+@media screen and (max-width: 833px) {
+    .card{
+        width: 100px;
+        height: 150px;
+    }
+
+    .card_back img{
+        width: 85px;
+    }
+
+    .card_front img{
+        width: 100px;
+        height: 150px;
+    }
+
+    #gameOver{
+        padding: 10%;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .card{
+        width: 90px;
+        height: 140px;
+    }
+
+    .card_back img{
+        width: 75px;
+    }
+    
+    .card_front img{
+        width: 90px;
+        height: 140px;
+    }
+
+    #gameOver{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    
+    .card{
+        width: 80px;
+        height: 130px;
+    }
+
+    .card_back img{
+        width: 70px;
+    }
+
+    .card_front img{
+        width: 80px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
+    #gameBoard{
+        gap: 15px;
+    }
+
+    .card{
+        width: 60px;
+        height: 110px;
+    }
+
+    .card_back img{
+        width: 50px;
+    }
+
+    .card_front img{
+        width: 60px;
+        height: 110px;
+    }
+
+    #gameOver{
+        font-size: 25px;
+    }
+
+    #restart{
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    h1{
+        font-size: 25px;
+    }
+    
+    #gameBoard{
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .card{
+        width: 45px;
+        height: 90px;
+    }
+
+    .card_back img{
+        width: 35px;
+    }
+
+    .card_front img{
+        width: 45px;
+        height: 90px;
+        border-radius: 10px;
+    }
+
+    .card_front, .card_back{
+        border-radius: 10px;
+    }
+    
+}
